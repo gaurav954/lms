@@ -134,7 +134,7 @@ var MemoirCollectionModel = Backbone.Collection.extend({
 
     model: MemoirModel,
 
-    url: "http://localhost:8080/memoir?user=",
+    url: "http://localhost:8080/memoir?user=",   
 
     getData: function(user, cbOnMemoirRes) {
         var self = this;
