@@ -1,0 +1,19 @@
+﻿[
+    {
+        "id" : 1,
+        'name' : 'vishal',
+        'role' : 'father'
+    },
+    {
+         "id" : 2,
+        'name' : 'vandana',
+        'role' : 'mother'
+    },
+    {
+         "id" : 3,
+        'name' : 'gaurav',
+        'role' : 'mama'
+    }    
+]
+
+jsonArr[]

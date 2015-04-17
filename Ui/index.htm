@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <title>NextGen Technologies</title>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="files/iconcursor.ico" type="image/png"/>
+    <link href="bootstrap-3.2.0/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" />        
+    <link href="files/datepicker.css" rel="stylesheet" type="text/css" />
+    <link href="files/lms.css" rel="stylesheet" type="text/css" />
+    <script src="files/jquery.min.js" type="text/javascript"></script>
+    <script src="files/jquery.tmpl.js" type="text/javascript"></script>
+    <script src="files/bootstrap-datepicker.js" type="text/javascript"></script>    
+    <script src="files/underscore-min.js" type="text/javascript"></script>
+    <script src="files/backbone-min.js" type="text/javascript"></script>
+    <script src="files/backbone.collectionview.js" type="text/javascript"></script>
+    <script src="files/utils.js" type="text/javascript"></script>    
+
+    <script src="views/viewMemoir.js" type="text/javascript"></script>
+    <script src="Models/modelMemoir.js" type="text/javascript"></script>
+    <script src="views/viewApplyLeave.js" type="text/javascript"></script>
+    <script src="views/viewMyleave.js" type="text/javascript"></script>
+    <script src="Models/modelMyleave.js" type="text/javascript"></script>
+    <script src="appRouter.js" type="text/javascript"></script>
+    <script src="home.js" type="text/javascript"></script>   
+</head>
+<body>
+<div class="containerOverall">
+    <div class="topbar">
+        <a href="#home" class="imgLogo"><img src="files/logo.gif" alt="NextGen Technologies" /></a>
+        <span class="user">
+            <span class="glyphicon glyphicon-user"></span>
+            <a id="user"> User</a>
+            <a href="#logout">| Logout</a>
+        </span>
+    </div>
+    <nav class="navbar navbar-inverse navlook">
+        <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navmargin">
+                <li class="active"><a href="#">HOME</a></li>
+                <li><a href="#LMS">LMS</a></li>
+                <li><a href="#Work_diary">WORK DIARY</a></li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+    <div class="lmsHome">
+        <div class="left">
+            <p>Leave management system (LMS) is designed to radically simplify the process of planning, applying and approving leave for Smartek employees.
+ 
+            The LMS eliminates any confusion or delay by enabling employees and supervisors to action time-off applications simply by entering the dates and type of leave the individual seeks after the employee has viewed his or her entitlements online.
+             
+            Managers can in turn view the applications on a Leave Planner , where they can see the overall pattern of leave applications and personnel availability, helping them to make prompt informed decisions on approvals and staffing levels.</p>
+             
+            Employees use their system logins to get immediate access to their entitlements, while managers can, at a glance, see all employees' leave history, leave balances, pending leave applications, authorizations, authorizations awaited and statutory holidays. This helps in speeding up the process and helps managers by ensuring compliance with company policies.</p>
+             
+            <p>This is web-based app and doesn’t require any additional hardware / software installation or support.</p>
+        </div>
+        <div class="right">
+            <div class="rightTop">                
+                <div class="LmsButton">
+                    <a href="#Lms_Home"><button type="button" id='enterLms' class="btn btn-primary btn-lg btn-block buttonLms">Leave Management System</button></a>
+                </div>
+            </div>
+            <div class="rightBottom">
+                <img src="files/calendar.jpg" alt="calendar"/>
+            </div>
+        </div>
+    </div>
+    <div class="loginBlock">        
+        <div class="invalid">
+            <p>Username or Password Invalid<span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span></p>
+        </div>  
+              
+        <div class="linelogin">
+            <input type="text" id="username" placeholder="Username"/>
+        </div>
+        
+        <div class="linelogin">
+            <input type="password" id="password" placeholder="Password"/>
+        </div>
+        
+        <div class="linelogin">
+            <div class="loginSubmit">
+                <a href="#login" ><button id ="submitLogin" class="btn btn-primary btn-block ">Login</button></a>
+            </div>
+        </div>
+        <div class="help"><a href="#">Forgot your Password?</a></div>        
+    </div> 
+    
+    <div class="lms_container">
+        <div class="lms_left">
+        <div><a type="button" href="#my_leave" class="btn btn-danger btn-lg btn-block buttonLms">My Leave</a></div>
+        <div><a type="button" href="#apply_leave" class="btn btn-warning btn-lg btn-block buttonLms">Apply Leave</a></div>
+        <div><a type="button" href="#memoir" class="btn btn-info btn-lg btn-block buttonLms">Memoir</a></div>
+        </div>
+        
+        <div class="lms_right">
+            <div id="myleave"></div>
+        </div>
+        
+        <div class="applyleave_container"></div>
+        
+        <div class='memoir_container'></div>
+    </div>
+</body>
+</html>
